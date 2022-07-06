@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- <link href="images/icons/favicon/favicon.ico" rel="icon"> -->
+    <script src="https://kit.fontawesome.com/2629917a51.js" crossorigin="anonymous"></script>
+    <title>Lesezeichen</title>
+  </head>
+  <body>
+    <!-- Open Modal -->
+    <h1 id="show-modal">Lesezeichen +</h1>
+    <!-- Bookmarks -->
+    <div class="container" id="bookmarks-container"></div>
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <i class="fas fa-times close-icon" id="close-modal"></i>
+        <div class="modal-header">
+          <h3>Neues Lesezeichen</h3>
+        </div>
+        <div class="modal-content">
+          <form id="bookmark-form">
+            <!-- Website Name -->
+            <div class="form-group">
+              <label for="website-name" class="form-label">Name der Seite</label>
+              <input type="text" class="form-input" id="website-name">
+            </div>
+            <!-- Website URL -->
+            <div class="form-group">
+              <label for="website-url" class="form-label">Internet-Adresse</label>
+              <input type="text" class="form-input" id="website-url">
+            </div>
+            <button type="submit">Speichern</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/app2.js"></script>
+  </body>
+</html>
+
